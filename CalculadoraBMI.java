@@ -9,6 +9,7 @@ public class CalculadoraBMI {
         double peso = s.nextDouble();
         System.out.print("Por favor, introduce tu estatura en metros: ");
         double estatura = s.nextDouble();
+        s.close();
 
         // Código para calcular el BMI
         double bmi = peso / (estatura * estatura);
@@ -24,5 +25,6 @@ public class CalculadoraBMI {
         } else {
             System.out.println("Obesidad");
         }
+
     }
 }

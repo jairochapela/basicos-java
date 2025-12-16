@@ -20,6 +20,20 @@ public class Pais {
     } 
 
     @Override
+    public boolean equals(Object otro) {
+        if (!(otro instanceof Pais)) {
+            return false;
+        }
+        Pais otroPais = (Pais) otro;
+        return this.nombre.equals(otroPais.nombre) &&
+               this.capital.equals(otroPais.capital) &&
+               this.poblacion == otroPais.poblacion &&
+               this.extension == otroPais.extension &&
+               this.moneda.equals(otroPais.moneda);
+    }
+
+
+    @Override
     public String toString() {
         return "País: " + nombre + "\t" +
                "Capital: " + capital + "\t" +

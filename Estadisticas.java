@@ -31,5 +31,7 @@ public class Estadisticas {
             }
 
         }
+
+        s.close();
     }
 }
