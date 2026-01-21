@@ -24,14 +24,14 @@ public class ConectarBaseDeDatos {
     public static void main(String[] args) {
         
         try {
-        // Connection con = DriverManager.getConnection(
-        //                  "jdbc:postgresql://localhost:5432/agenda",
-        //                  "jairo",
-        //                  "");
         Connection con = DriverManager.getConnection(
-                         "jdbc:mariadb://127.0.0.1:3306/agenda",
+                         "jdbc:postgresql://localhost:5432/agenda",
                          "jairo",
-                         "aaa");
+                         "");
+        // Connection con = DriverManager.getConnection(
+        //                  "jdbc:mariadb://127.0.0.1:3306/agenda",
+        //                  "jairo",
+        //                  "aaa");
 
         System.out.println("Conexión exitosa a la base de datos.");
 
