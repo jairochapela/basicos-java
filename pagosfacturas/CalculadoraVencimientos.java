@@ -32,6 +32,9 @@ public class CalculadoraVencimientos {
                 return addDiasHabiles(fechaEmision, 30);
 
             case FIN_MES:
+                // Hay que tener en cuenta que no todos los meses tienen el mismo número de días.
+                // Una posible solución es construir le fecha del día 1 del mes siguiente y luego
+                // restarle un día.
                 return null; // TODO: implementar este caso
 
             case DIA_15_MES_SIGUIENTE:
