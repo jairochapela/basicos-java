@@ -22,5 +22,8 @@ public class QueDiaEsHoy {
 
         long dias = fechaActual.toEpochDay() - fechaInicio.toEpochDay();
         System.out.println("Han pasado " + dias + " dias desde el comienzo del curso.");
+
+        LocalDate fechaMañana = fechaActual.plusDays(1);
+        System.out.println("Mañana será: " + fechaMañana);
     }
 }
