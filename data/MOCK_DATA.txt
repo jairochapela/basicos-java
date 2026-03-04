@@ -1,0 +1,41 @@
+id	nombre	direccion	poblacion	habitaciones	banos	garaje	piscina
+1	Bolf	46 Manitowish Place	Baranusa	1	2	true	false
+2	Stormont	6 Hauk Terrace	Tāklisah	2	2	true	true
+3	Womack	2580 Warbler Terrace	Changpo	3	1	false	false
+4	Mackneis	773 American Ash Center	Dengzhuang	1	1	false	true
+5	Dopson	5 6th Park	Gaoping	2	2	true	true
+6	Chatband	1293 Thackeray Drive	Tucson	4	1	false	true
+7	Rivel	2 Melby Pass	Tyre	4	2	true	true
+8	Landsborough	776 Golf View Lane	Leiyang	1	1	true	false
+9	Cozzi	79756 Huxley Parkway	Orguz	1	1	false	false
+10	Kenyam	933 Sommers Crossing	Rudnogorsk	4	1	false	false
+11	Pietrowski	19678 Division Court	Pelym	4	2	true	false
+12	Finder	0617 Hintze Crossing	Plaza Huincul	4	1	false	true
+13	Youell	5 Muir Lane	Riangblolong	3	2	true	true
+14	Trenear	9516 Eggendart Point	Halimpu	4	2	false	true
+15	Masseo	00891 Delladonna Plaza	Le Havre	4	2	true	true
+16	Baseley	0169 Everett Circle	Pau	1	2	true	false
+17	Kilshaw	47362 Loomis Place	Jinshanpu	2	2	true	false
+18	Kermott	8910 Acker Junction	Saint-Étienne	2	1	true	false
+19	Coombe	574 Bunker Hill Court	Tabatinga	1	1	false	true
+20	Bernardeschi	8 Hanover Crossing	Norrköping	5	1	false	true
+21	Weston	0736 John Wall Lane	Basse-Terre	2	2	true	true
+22	Paddie	14 Hallows Way	Asahbadung	5	2	false	true
+23	Worsnap	94 Eagle Crest Parkway	Kushnarënkovo	1	2	true	false
+24	Reeken	29 Stuart Drive	Polonne	3	2	true	false
+25	Perri	093 Bobwhite Court	Pandean	5	1	true	true
+26	Admans	0 Oakridge Center	Qikeshu	1	1	true	true
+27	Mugridge	926 Elmside Center	Hāfizābād	2	1	true	true
+28	Biddles	4 Scott Avenue	Amiens	3	1	true	false
+29	Brazener	32 Meadow Ridge Parkway	Shashi	3	2	false	false
+30	Lockery	483 Forest Dale Center	Levashi	2	2	true	false
+31	Tiery	9 Atwood Crossing	Dzoraghbyur	2	2	false	false
+32	Frisel	1735 4th Place	Batujaran	4	1	false	false
+33	Sheers	46 Fisk Road	Prigrevica	3	1	false	false
+34	Cissen	4441 Anhalt Park	Yaxi	1	2	false	true
+35	Reddyhoff	8 Northridge Road	Paris 11	2	2	false	true
+36	Pawelczyk	27139 Del Sol Park	Velké Meziříčí	5	1	true	true
+37	Yakushkin	47 Esch Alley	Khafizan	3	2	true	true
+38	Maginn	8859 Sunfield Plaza	Ciela Lebak	4	2	false	true
+39	Antczak	77883 Comanche Trail	Shilong	5	2	false	true
+40	Ipwell	8707 Helena Drive	Mokotów	2	2	false	true

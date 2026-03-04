@@ -1,11 +1,12 @@
 package lectortab;
 
 import java.io.BufferedReader;
-import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class LectorTab {
@@ -71,8 +72,38 @@ public class LectorTab {
     public static void main(String[] args) {
         
         try {
-            List<Vivienda> viviendas = leerViviendasDesdeFicheroTSV("/Users/jairo/Downloads/MOCK_DATA.txt");
+            List<Vivienda> viviendas = leerViviendasDesdeFicheroTSV("data/MOCK_DATA.txt");
+
+            // Filtramos las viviendas que tengan garaje
+            List<Vivienda> viviendasConGaraje = new ArrayList<>();
             for (Vivienda v : viviendas) {
+                if (v.hasGaraje()) {
+                    viviendasConGaraje.add(v);
+                }
+            }
+
+            // Ordenar por número de habitaciones (de mayor a menor) y, en caso de empate, por número de baños (de mayor a menor)
+            viviendasConGaraje.sort(new Comparator<Vivienda>() {
+
+                @Override
+                public int compare(Vivienda a, Vivienda b) {
+                    
+                    int resultado = a.getHabitaciones() - b.getHabitaciones();
+
+                    // Solamente si hay empate en el número de habitaciones, se compara el número de baños
+                    if (resultado == 0) {
+                        resultado = a.getBanos() - b.getBanos();
+                    }
+
+                    return resultado;
+                }
+                
+            });
+            
+            Collections.reverse(viviendasConGaraje); // Invertimos el orden para que sea de mayor a menor
+
+            // Mostramos por consola todas las viviendas resultantes
+            for (Vivienda v : viviendasConGaraje) {
                 System.out.println("ID: " + v.getId());
                 System.out.println("Nombre: " + v.getNombre());
                 System.out.println("Dirección: " + v.getDireccion());
@@ -83,13 +114,13 @@ public class LectorTab {
                 System.out.println("Piscina: " + v.hasPiscina());
                 System.out.println("-----------------------------");
 
-                // System.out.println("INSERT INTO viviendas (id, nombre, direccion, poblacion, habitaciones, banos, garaje, piscina) VALUES (" +
-                //         v.getId() + ", '" + v.getNombre() + "', '" + v.getDireccion() + "', '" + v.getPoblacion() + "', " +
-                //         v.getHabitaciones() + ", " + v.getBanos() + ", " + v.hasGaraje() + ", " + v.hasPiscina() + ");");
-
             }
+
+
+
         } catch (Exception ex) {
             System.out.println("Error al leer el fichero: " + ex.getMessage());
+            ex.printStackTrace();
         }
     }
 
