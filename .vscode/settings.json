@@ -4,6 +4,8 @@
     ],
     "java.project.referencedLibraries": [
         "mariadb-java-client-3.5.7.jar",
-        "postgresql-42.7.8.jar"
+        "postgresql-42.7.8.jar",
+        "junit-jupiter-api-6.0.3.jar",
+        "test-lib/**/*.jar"
     ]
 }
